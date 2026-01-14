@@ -3,119 +3,80 @@
 <head>
 <meta charset="UTF-8">
 <title>K Anil | Full Stack Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="header">
-  <div class="profile-wrapper">
-    <img src="profile.png" class="profile-pic">
-  </div>
+<header class="hero">
+  <img src="profile.png" class="profile-pic">
   <h1>K Anil</h1>
-  <p>Full Stack Developer</p>
+  <p class="tagline">Full Stack Developer</p>
 
-
-
-  <p>
-    📞 +91 6301095875 |
-    📧 ka9751956@gmail.com |
-    📍 Hyderabad |
-    <a href="https://www.linkedin.com/in/k-anil-625152227" target="_blank">LinkedIn</a> |
-    <a href="https://github.com/Anil9703" target="_blank">GitHub</a>
-  </p>
+  <div class="buttons">
+    <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
+    <a href="https://github.com/Anil9703" target="_blank" class="btn outline">GitHub</a>
+    <a href="https://www.linkedin.com/in/k-anil-625152227" target="_blank" class="btn outline">LinkedIn</a>
+  </div>
 </header>
 
-<section>
-  <h2>Summary</h2>
+<section class="about fade-in">
+  <h2>About Me</h2>
   <p>
-    Results-driven Full Stack Developer with expertise in building scalable web applications used by 10,000+ users.
-    Proficient in React.js, Angular, Vue.js, Node.js, Express, Django, Spring Boot, REST APIs, GraphQL and cloud platforms (AWS, Azure, GCP).
-    Experienced in DevOps, CI/CD, Docker and Kubernetes, reducing deployment time by 40%.
+    Results-driven Full Stack Developer experienced in building scalable web applications for 10,000+ users.
+    Skilled in React, Node.js, Django, Cloud & DevOps, focused on performance, clean code and modern UI.
   </p>
 </section>
 
-<section>
-  <h2>Education</h2>
-  <p><strong>Bachelors in Computer Science</strong></p>
-  <p>JB Institute of Engineering and Technology, Hyderabad (2020 – 2024)</p>
-  <p>CGPA: 8.07 / 10</p>
-</section>
+<section class="projects fade-in">
+  <h2>Projects</h2>
 
-<section>
-  <h2>Experience & Projects</h2>
+  <div class="project-grid">
 
-  <h3>PG Life – Hostel Search Website (Internshala)</h3>
-  <ul>
-    <li>Developed a responsive platform for 1,000+ PG listings and 10,000+ users.</li>
-    <li>Built frontend with HTML, CSS, Bootstrap, JavaScript and React.</li>
-    <li>Backend in PHP with MySQL for authentication, bookings and reviews.</li>
-    <li>Improved search efficiency by 40% and user engagement by 35%.</li>
-  </ul>
+    <a class="project-card" href="projects/pg-life.html">
+      <h3>PG Life – Hostel Search</h3>
+      <p>Web platform for 10,000+ users to find PGs</p>
+    </a>
 
-  <h3>E-Commerce Website</h3>
-  <ul>
-    <li>Built a full-stack e-commerce platform with 1,000+ products.</li>
-    <li>React frontend, Node.js & Express backend, MongoDB/MySQL database.</li>
-    <li>JWT authentication, Razorpay/Stripe payments, admin dashboard.</li>
-    <li>Deployed on Netlify & Render/Heroku with 99.9% uptime.</li>
-  </ul>
+    <a class="project-card" href="projects/ecommerce.html">
+      <h3>E-Commerce Platform</h3>
+      <p>Full stack shopping platform with payments</p>
+    </a>
 
-  <h3>Finance Application – UI/UX</h3>
-  <ul>
-    <li>Designed finance tracking app using Figma and Adobe XD.</li>
-    <li>Created 10+ wireframes and prototypes.</li>
-    <li>Improved usability and engagement by 40%.</li>
-  </ul>
-</section>
+    <a class="project-card" href="projects/finance.html">
+      <h3>Finance App (UI/UX)</h3>
+      <p>Expense tracking & budgeting application</p>
+    </a>
 
-<section>
-  <h2>Major Academic Projects</h2>
+    <a class="project-card" href="projects/data-poison.html">
+      <h3>Data Poison Detection</h3>
+      <p>Machine learning security system</p>
+    </a>
 
-  <h3>Data Poisoning Detection using Distributed Machine Learning</h3>
-  <ul>
-    <li>Used Federated Learning and anomaly detection (Isolation Forest, K-Means).</li>
-    <li>Achieved 85% accuracy detecting malicious data.</li>
-    <li>Implemented TensorFlow, Scikit-learn, Matplotlib & Seaborn.</li>
-  </ul>
+    <a class="project-card" href="projects/face-recognition.html">
+      <h3>Face Recognition System</h3>
+      <p>AI-based biometric authentication</p>
+    </a>
 
-  <h3>Android Based Face Recognition System</h3>
-  <ul>
-    <li>Developed AI-based face recognition with 95% accuracy.</li>
-    <li>Built attendance system using Android Studio & Firebase.</li>
-    <li>Used OpenCV, CNN, Haar Cascade and TensorFlow Lite.</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Skills</h2>
-
-  <h3>Frontend</h3>
-  <p>HTML5, CSS3, Bootstrap, JavaScript (ES6+), TypeScript, React.js, SCSS, SASS, GraphQL, UI/UX, Figma</p>
-
-  <h3>Backend & Databases</h3>
-  <p>Node.js, Express, Django, FastAPI, PHP, MySQL, PostgreSQL, MongoDB, JWT, REST APIs</p>
-
-  <h3>DevOps & Cloud</h3>
-  <p>AWS (EC2, S3), Azure, Docker, Kubernetes, GitHub Actions, Netlify</p>
-</section>
-
-<section>
-  <h2>Certifications</h2>
-  <ul>
-    <li>Certified Full Stack Developer – HackerRank</li>
-    <li>Certified Software Engineer – HackerRank</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Languages</h2>
-  <p>English – Proficient</p>
+  </div>
 </section>
 
 <footer>
-  <p>© 2026 K Anil | Full Stack Developer</p>
+  <p>© 2026 K Anil — Full Stack Developer</p>
 </footer>
+
+<script>
+const faders = document.querySelectorAll('.fade-in');
+window.addEventListener('scroll', () => {
+  faders.forEach(el => {
+    const pos = el.getBoundingClientRect().top;
+    if(pos < window.innerHeight - 100){
+      el.classList.add('show');
+    }
+  });
+});
+</script>
 
 </body>
 </html>
