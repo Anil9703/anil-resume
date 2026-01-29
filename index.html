@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>K Anil | Full Stack Developer</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>K Anil | Full Stack Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-
+<!-- NAVBAR -->
 <nav class="navbar">
   <div class="logo">Anil</div>
   <div class="nav-links">
     <a href="#about">About</a>
+    <a href="#education">Education</a>
     <a href="#projects">Projects</a>
     <a href="resume.pdf" target="_blank">Resume</a>
     <a href="mailto:ka9751956@gmail.com">Contact</a>
+    
   </div>
 </nav>
 
-
+<!-- HERO SECTION -->
 <header class="hero">
-  <img src="profile.png" class="profile-pic">
+  <img src="profile.png" class="profile-pic" alt="K Anil">
   <h1>K Anil</h1>
-  <p class="tagline">Full Stack Developer</p>
+  <p class="tagline">Full Stack Developer • React • Node • Cloud</p>
 
   <div class="buttons">
     <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
@@ -33,6 +35,7 @@
   </div>
 </header>
 
+<!-- ABOUT -->
 <section id="about" class="about fade-in">
   <h2>About Me</h2>
   <p>
@@ -41,64 +44,100 @@
   </p>
 </section>
 
-<section id="projects" class="projects fade-in">
+<!-- EDUCATION -->
+<section id="education" class="education fade-in">
+  <h2>Education</h2>
 
+  <div class="edu-card">
+    <h3>Bachelor of Technology (Computer Science)</h3>
+    <p class="edu-college">JB Institute of Engineering and Technology, Hyderabad</p>
+    <p class="edu-year">2020 – 2024</p>
+    <p class="edu-score">CGPA: 8.07 / 10</p>
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="projects fade-in">
   <h2>Projects</h2>
 
   <div class="project-grid">
 
     <a class="project-card" href="projects/pg-life.html">
+      <img src="images/pg-life.png" alt="PG Life Project">
       <h3>PG Life – Hostel Search</h3>
       <p>Web platform for 10,000+ users to find PGs</p>
     </a>
 
     <a class="project-card" href="projects/ecommerce.html">
+      <img src="images/ecommerce.png">
       <h3>E-Commerce Platform</h3>
       <p>Full stack shopping platform with payments</p>
     </a>
 
     <a class="project-card" href="projects/finance.html">
+      <img src="images/finance.png">
       <h3>Finance App (UI/UX)</h3>
       <p>Expense tracking & budgeting application</p>
     </a>
 
     <a class="project-card" href="projects/data-poison.html">
+      <img src="images/data-poison.png">
       <h3>Data Poison Detection</h3>
       <p>Machine learning security system</p>
     </a>
 
     <a class="project-card" href="projects/face-recognition.html">
+      <img src="images/face-recognition.png">
       <h3>Face Recognition System</h3>
       <p>AI-based biometric authentication</p>
     </a>
 
   </div>
-
-  <section class="fade-in">
-<h2>Skills</h2>
-<div class="skill">React <div class="bar"><span style="width:90%"></span></div></div>
-<div class="skill">Node.js <div class="bar"><span style="width:85%"></span></div></div>
-<div class="skill">SQL <div class="bar"><span style="width:80%"></span></div></div>
-<div class="skill">Cloud & DevOps <div class="bar"><span style="width:75%"></span></div></div>
 </section>
 
+<!-- SKILLS -->
+<section class="fade-in">
+  <h2>Skills</h2>
 
+  <div class="skill">
+    React
+    <div class="bar"><span style="width:90%"></span></div>
+  </div>
+
+  <div class="skill">
+    Node.js
+    <div class="bar"><span style="width:85%"></span></div>
+  </div>
+
+  <div class="skill">
+    SQL
+    <div class="bar"><span style="width:80%"></span></div>
+  </div>
+
+  <div class="skill">
+    Cloud & DevOps
+    <div class="bar"><span style="width:75%"></span></div>
+  </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <p>© 2026 K Anil — Full Stack Developer</p>
 </footer>
 
+<!-- FADE-IN SCRIPT -->
 <script>
-const faders = document.querySelectorAll('.fade-in');
-window.addEventListener('scroll', () => {
-  faders.forEach(el => {
-    const pos = el.getBoundingClientRect().top;
-    if(pos < window.innerHeight - 100){
-      el.classList.add('show');
-    }
+  const faders = document.querySelectorAll('.fade-in');
+
+  window.addEventListener('scroll', () => {
+    faders.forEach(el => {
+      const pos = el.getBoundingClientRect().top;
+      if (pos < window.innerHeight - 100) {
+        el.classList.add('show');
+      }
+    });
   });
-});
 </script>
 
 </body>
